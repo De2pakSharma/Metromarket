@@ -1,0 +1,278 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Navbar</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+ 
+  <div class="navbar-custom d-flex justify-content-between align-items-center desktop-nav">
+    <!-- Left: Social Icons -->
+    <div class="social-icons d-flex">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+
+    <!-- Center: Search Box -->
+    <div class="d-flex justify-content-center flex-grow-1 px-3">
+      <div class="search-box w-100">
+        <input type="text" placeholder="search items">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+
+    <!-- Right: Phone and Cart -->
+    <div class="d-flex align-items-center">
+      <span class="phone-text">09851300</span>
+      <i class="fas fa-phone text-white me-3"></i>
+      <div class="cart-box">
+        <i class="fas fa-basket-shopping"></i>
+        <span>0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE NAVBAR (SM and MD only) -->
+  <nav class="navbar navbar-expand-lg navbar-custom mobile-nav">
+    <div class="container-fluid justify-content-between align-items-center">
+      <!-- Left: Toggler -->
+      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center: Logo -->
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="images/logo.png" alt="Logo" class="logo">
+      </a>
+
+      <!-- Right: Cart -->
+      <div class="cart-box">
+        <i class="fas fa-basket-shopping"></i>
+        <span>0</span>
+      </div>
+    </div>
+  </nav>
+
+
+ 
+<div class="main-container" style="background-color:  #f5f5f5;">
+  <!-- Sidebar (Left) -->
+   
+
+<div class="sidebar d-none d-lg-flex flex-column">
+  <div>
+    <img src="images/logo.png" alt="Metro Market Logo">
+    <ul style="font-weight: 600;">
+      <li>Promo</li>
+      <li>Seasonal</li>
+      <li>Bakery</li>
+      <li>Fruits & Vegetables</li>
+      <li>Meat, Poultry & Fish</li>
+      <li>Delicatessen</li>
+      <li>Deli, Dairy & Eggs</li>
+      <li>Fresh To Go</li>
+      <li>Alcohol</li>
+      <li>Beverages</li>
+      <li>Tobacco</li>
+      <li>Frozen</li>
+      <li>Healthy Living</li>
+      <li>Snacks</li>
+      <li>Breakfast</li>
+      <li>Home Bake & Desserts</li>
+      <li>Cans, Jars & Packets</li>
+      <li>Seasoning & Condiment</li>
+      <li>Rice, Pasta & Pulses</li>
+      <li>World Foods</li>
+      <li>Cleaning & Household</li>
+      <li>Beauty & Personal Care</li>
+      <li>Baby & Child</li>
+      <li>Papers & Plastics</li>
+      <li>Pets</li>
+      <li>Home & Outdoor</li>
+      <li>Electronics & Appliances</li>
+      <li>Kitchenware</li>
+      <li>Stationery & Party Supplies</li>
+    </ul>
+  </div>
+
+  <div>
+    <ul class="sidebar-footer" style="margin-top: 100px; font-weight: 200;" >
+      <li>Reach us</li>
+      <li>Secure Online Payments</li>
+      <li>Delivery Areas</li>
+      <li>About Us</li>
+      <li>Returns & Exchanges</li>
+      <li>Contact Us</li>
+    </ul>
+
+    <div class="app-buttons">
+      <button>
+        <i class="fab fa-google-play"></i>
+        <span>GET APP</span>
+      </button>
+      <button>
+        <i class="fab fa-apple"></i>
+        <span>GET APP</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Banner / Main Content (Center) -->
+  <div class="banner-section">
+    <!-- Top Left Icons -->
+    <div class="top-icons d-none d-lg-flex stickey">
+      <div><i class="fas fa-heart me-1"></i> My Favorites</div>
+      <div><i class="fas fa-list me-1"></i> My Orders</div>
+    </div>
+
+    <!-- Top Right Icons -->
+    <div class="top-icons-right d-none d-lg-flex">
+      <div><i class="fas fa-user me-1"></i> My Account</div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="metroCarousel" class="carousel slide carousel-fade mt-5 mt-lg-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner1.jpg" class="d-block w-100" alt="Banner 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner2.jpg" class="d-block w-100" alt="Banner 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner3.jpg" class="d-block w-100" alt="Banner 3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner4.jpg" class="d-block w-100" alt="Banner 3">
+        </div>
+         <div class="carousel-item">
+          <img src="images/banner5.jpg" class="d-block w-100" alt="Banner 3">
+        </div>
+      </div>
+    </div>
+      <div class="claim-box d-flex align-items-center gap-3 ">
+    <img src="images/claimNow.jpg" alt="Claim Offer" class="claim-img">
+    <div>
+      <div class="claim-now">Claim Now</div>
+      <div class="discount-text">GET 10% DISCOUNT</div>
+    </div>
+  </div>
+ 
+
+  <div class=" d-flex " style="justify-content: space-between; background-color:  #f9f9f9;" >
+  <h4 class="text-danger mb-4 mt-5">Best Sellers</h4>
+<button type="button" class="btn btn-light" style="padding: 0 20px;" >more</button>  
+</div>
+  <div class="best-sellers-section" style="background-color:  #f9f9f9;" >
+    <div class="product-card">
+      <img src="images/card1.jpg" alt="2in1 Coffee">
+      <div>
+        <p class="text-muted small">Nescafé</p>
+        <h6>2in1 Coffee & Creamer 11.7g</h6>
+        <p class="text-muted small">PCS</p>
+      </div>
+      <div class="price-add">
+        <strong>0.17 USD</strong>
+        <button class="add-btn"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/card2.jpg" alt="3in1 Classic">
+      <div>
+        <p class="text-muted small">Nescafé</p>
+        <h6>My Cup 3in1 Classic Pouch 20g</h6>
+        <p class="text-muted small">PCS</p>
+      </div>
+      <div class="price-add">
+        <strong>0.16 USD</strong>
+        <button class="add-btn"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/card3.jpg" alt="Banana">
+      <div>
+        <p class="text-muted small">Local Banana</p>
+        <p class="text-muted small">500GR</p>
+      </div>
+      <div class="price-add">
+        <strong>1.06 USD</strong>
+        <button class="add-btn"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/card4.jpg" alt="Lemon">
+      <div>
+        <p class="text-muted small">Local Lemon</p>
+        <p class="text-muted small">500GR</p>
+      </div>
+      <div class="price-add">
+        <strong>1.27 USD</strong>
+        <button class="add-btn"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/card5.jpg" alt="Potato">
+      <div>
+        <p class="text-muted small">Local Potato</p>
+        <p class="text-muted small">500GR</p>
+      </div>
+      <div class="price-add">
+        <strong>0.25 USD</strong>
+        <button class="add-btn"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/card6.jpg" alt="Cucumber">
+      <div>
+        <p class="text-muted small">Cucumber</p>
+        <p class="text-muted small">500GR</p>
+      </div>
+      <div class="price-add">
+        <strong>0.76 USD</strong>
+        <button class="add-btn"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/card7.jpg" alt="Tomato">
+      <div>
+        <p class="text-muted small">Local Tomato</p>
+        <p class="text-muted small">500GR</p>
+      </div>
+      <div class="price-add">
+        <strong>0.26 USD</strong>
+        <button class="add-btn"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+   
+
+  <!-- Right Section with Shopping Bag -->
+  <div class="right-section d-none d-lg-flex">
+    <div class="shopping-bag-icon">
+      <i class="fas fa-shopping-bag fa-3x text-muted"></i>
+    </div>
+  </div>
+</div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
