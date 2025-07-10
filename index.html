@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,9 +40,10 @@
   <nav class="navbar navbar-expand-lg navbar-custom mobile-nav">
     <div class="container-fluid justify-content-between align-items-center">
        
-      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler text-white border-white" type="button" onclick="openMobileSidebar()">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
  
       <a class="navbar-brand mx-auto" href="#">
         <img src="images/logo.png" alt="Logo" class="logo">
@@ -357,6 +358,95 @@
     </div>
   </div>
 </div>
+
+<!-- Mobile Sidebar  -->
+<div class="mobile-sidebar d-lg-none" id="mobileSidebar">
+  <div class="mobile-sidebar-header">
+    <span>Menu</span>
+    <button onclick="closeMobileSidebar()">✕</button>
+  </div>
+  <ul class="mobile-menu-list">
+     <img src="images/logo.png" alt="Metro Market Logo" class="mobile-sidebar-logo">
+
+    <ul style="font-weight: 600;">
+      <li>Promo</li>
+      <li>Seasonal</li>
+      <li>Bakery</li>
+      <li>Fruits & Vegetables</li>
+      <li>Meat, Poultry & Fish</li>
+      <li>Delicatessen</li>
+      <li>Deli, Dairy & Eggs</li>
+      <li>Fresh To Go</li>
+      <li>Alcohol</li>
+      <li>Beverages</li>
+      <li>Tobacco</li>
+      <li>Frozen</li>
+      <li>Healthy Living</li>
+      <li>Snacks</li>
+      <li>Breakfast</li>
+      <li>Home Bake & Desserts</li>
+      <li>Cans, Jars & Packets</li>
+      <li>Seasoning & Condiment</li>
+      <li>Rice, Pasta & Pulses</li>
+      <li>World Foods</li>
+      <li>Cleaning & Household</li>
+      <li>Beauty & Personal Care</li>
+      <li>Baby & Child</li>
+      <li>Papers & Plastics</li>
+      <li>Pets</li>
+      <li>Home & Outdoor</li>
+      <li>Electronics & Appliances</li>
+      <li>Kitchenware</li>
+      <li>Stationery & Party Supplies</li>
+    </ul>
+  
+
+  <div>
+    <ul class="sidebar-footer" style="margin-top: 100px; font-weight: 200;" >
+      <li>Reach us</li>
+      <li>Secure Online Payments</li>
+      <li>Delivery Areas</li>
+      <li>About Us</li>
+      <li>Returns & Exchanges</li>
+      <li>Contact Us</li>
+    </ul>
+
+    <div class="app-buttons">
+      <button>
+        <i class="fab fa-google-play"></i>
+        <span>GET APP</span>
+      </button>
+      <button>
+        <i class="fab fa-apple"></i>
+        <span>GET APP</span>
+      </button>
+    </div>
+  </div>
+  </ul>
+</div>
+
+
+<div class="custom-footer-bar-inside">
+  <div class="footer-left">
+    <a href="#">Terms And Conditions</a>
+    <a href="#">Privacy</a>
+  </div>
+  <div class="footer-right" style="margin-right: 20%;">
+    <i class="fas fa-wave-square me-1"></i> Powered by weevi
+  </div>
+</div>
+
+
+<script>
+  function openMobileSidebar() {
+    document.getElementById("mobileSidebar").classList.add("show");
+  }
+
+  function closeMobileSidebar() {
+    document.getElementById("mobileSidebar").classList.remove("show");
+  }
+</script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
