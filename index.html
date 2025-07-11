@@ -19,7 +19,7 @@
       <i class="fab fa-instagram"></i>
     </div>
  <!-- Search box for sm/md devices -->
-<div class="search-box-wrapper d-block d-lg-none">
+<div class="search-box-wrapper d-block ">
   <div class="search-box w-100">
     <input type="text" placeholder="search items" class="w-100">
     <i class="fas fa-search"></i>
@@ -55,6 +55,14 @@
       </div>
     </div>
   </nav>
+
+  <div class="mobile-search-bar d-block d-lg-none" >
+  <input type="text" placeholder="search items" class="mobile-search-input">
+  <button class="mobile-search-btn">
+    <i class="fas fa-search"></i>
+  </button>
+</div>
+
 
   <div class="top-menu-bar d-flex ">
     <div class="left-menu" style="margin-left: 18%;">
@@ -129,7 +137,7 @@
  
   <div class="banner-section">
     <div id="metroCarousel" class="carousel slide carousel-fade mt-5 mt-lg-5" data-bs-ride="carousel">
-      <div class="carousel-inner">
+      <div class="carousel-inner" style="margin-top: -5%;">
         <div class="carousel-item active">
           <img src="images/banner1.jpg" class="d-block w-100" alt="Banner 1">
         </div>
@@ -259,7 +267,7 @@
 
   <div class=" d-flex" style="justify-content: space-between; background-color:  #f9f9f9;" >
   <h4 class="text-danger mb-2 mt-3">Best Sellers</h4>
- <button type="button" class="btn btn-light mt-2">more</button>
+ <button type="button" class="btn btn-light mt-2 px-4" style="background-color: white;">more</button>
 </div>
 
 
@@ -362,7 +370,6 @@
 <!-- Mobile Sidebar  -->
 <div class="mobile-sidebar d-lg-none" id="mobileSidebar">
   <div class="mobile-sidebar-header">
-    <span>Menu</span>
     <button onclick="closeMobileSidebar()">✕</button>
   </div>
   <ul class="mobile-menu-list">
@@ -433,6 +440,29 @@
   </div>
   <div class="footer-right" style="margin-right: 20%;">
     <i class="fas fa-wave-square me-1"></i> Powered by weevi
+  </div>
+</div>
+
+<div class="mobile-footer d-flex justify-content-around align-items-center d-lg-none py-2">
+  <div class="footer-item active">
+    <i class="fas fa-home"></i>
+    <p>Home</p>
+  </div>
+  <div class="footer-item">
+    <i class="fas fa-heart"></i>
+    <p>Favorites</p>
+  </div>
+  <div class="footer-item">
+    <i class="fas fa-box"></i>
+    <p>Orders</p>
+  </div>
+  <div class="footer-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <p>Address</p>
+  </div>
+  <div class="footer-item">
+    <i class="fas fa-user"></i>
+    <p>Account</p>
   </div>
 </div>
 
